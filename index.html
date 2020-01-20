@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Project tracking intro component</title>
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="logo">
+        <img src="images/logo.png">
+      </div>
+      <div class="boxmenu">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars" id="bars"></i>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="FunctionClose()">
+        <i class="fa fa-window-close" id="closebutton" aria-hidden="true"></i>
+      </a>
+      </div>
+
+    </div>
+    <div id="menu">
+      <ul>
+        <li><a href="">Product</a></li>
+        <li><a href="">Features</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><span>.</span></li>
+        <li><a href="">Login</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="section-text">
+      <span>New</span>
+      <span>&nbsp;Monograph Dashboard</span>
+      <h1>Powerful insights into your team</h1>
+      <p>Project planning and time tracking for agile teams</p>
+      <div><a href=""> Schedule a demo</a></div>
+      <span> to see a preview</span>
+    </div>
+    <div class="section-image">
+      <div></div>
+        <img src="images/illustration-devices.png">      
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Liny Thomas</a>.
+    </p>
+  </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("menu");
+      var y = document.getElementById("closebutton");
+      var z = document.getElementById("bars");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "block";
+      } else {
+        x.style.display = "block";
+        y.style.display ="block";
+        z.style.display = "none";
+      }
+    }
+    function FunctionClose(){
+      var x = document.getElementById("closebutton");
+      var y = document.getElementById("menu");
+      var z = document.getElementById("bars");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "block";
+      } else {
+        x.style.display = "block";
+        y.style.display == "block";
+        z.style.display = "none";
+      }
+    }
+    </script>
+    
+</body>
+
+</html>

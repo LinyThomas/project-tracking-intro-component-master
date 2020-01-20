@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: 16px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.header-top{
+    padding:  40px 4% 100px 12%;
+    width: 50%;
+}
+.boxmenu{
+    display: none;
+}
+#menu{
+    padding:  40px 12% 40px 4%;
+    width: 50%; 
+    background-color: #eef3f6;
+    text-align: center;
+}
+#menu ul li{
+    display: inline-block;
+}
+h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+}
+#menu ul li > a{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color:#000;
+}
+#menu ul li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#menu ul li span:first-of-type,#menu ul li:last-child a{
+    color:hsl(231, 7%, 65%);
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+.section-text{
+    padding: 30px 4% 100px 12%;
+    width: 50%;
+}
+.section-image{
+    width: 50%;
+    padding-bottom: 50px;  
+    position: relative;   
+}
+.section-image div{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 50%;
+    background-color: #eef3f6;
+    z-index: -1;
+    border-radius: 0 0 0 25px;
+}
+.section-image img{
+    width: 140%;
+    height: 100%;
+    z-index: 2;
+}
+.section-text span:first-child{
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.section-text span:nth-child(2), .section-text span:last-child{
+    color:hsl(231, 7%, 65%);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .25rem;
+    font-size: 14px;
+}
+.section-text h1{
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 3.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.section-text p{
+    color:hsl(231, 7%, 65%);
+    font-size: 1rem;
+    width: 60%;
+    margin-bottom: 60px;
+}
+.section-text div:first-of-type{
+    background-color:  hsl(0, 100%, 68%);   
+    display: inline-block;    
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.section-text div:first-of-type a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+.section-text div:first-of-type a:hover{
+    cursor: pointer;
+}
+.section-text span:nth-last-child(){
+    font-size: 10px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  
+
+@media screen and (min-width:701px) and (max-width:1339px){
+    .header-top{
+        padding: 40px 4% 100px 7%;
+    }
+    .boxmenu{
+        display: none;
+    }
+    header #menu{
+        font-size: 14px;
+        padding: 40px 7% 40px 0;
+        display: block;
+    }
+    header #menu ul li a{
+        padding: 15px;
+    }
+    .section-text {
+        padding: 30px 0 50px 7%;
+    }
+    .section-text h1{
+        font-size: 2.5rem;
+    }
+    
+    .section-text div:first-of-type{
+        padding: 10px;
+    }
+    
+    .section-text div:first-of-type a{
+        font-size: 10px;
+        letter-spacing: none;
+    }
+.section-text span:first-child,.section-text span:nth-child(2){
+    font-size: 14px;
+}
+ .section-text span:last-child{
+  
+    font-size: 10px;
+}
+}
+
+@media screen and (max-width:700px){
+
+    .header-top{  
+        width: 100%; 
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .logo{
+        width: 50%;
+        padding: 40px 20px;
+    }
+    .boxmenu{
+        display: block;
+        padding: 40px 20px;
+        width: 50%;
+        background-color: hsl(207, 33%, 95%);
+        
+    }
+    .fa{
+        float: right;
+        color: #000;
+        background: transparent;
+    }
+    header{
+        position: relative;
+    }
+   
+      header #menu {
+        width:65%; 
+        margin: 20px;
+        padding: 0;
+        -webkit-box-shadow: -5px -5px 5px 0p rgba(189,179,174,1);
+        -moz-box-shadow:-5px -5px 5px 0p rgba(189,179,174,1);
+        box-shadow:  -5px -5px 5px 0px  rgba(189,179,174,1);   
+        position: fixed;  
+        top:80px;
+        display: none;
+        z-index: 2;
+        background-color: #FFF;
+       
+      }
+      header #closebutton{
+          display: none;
+          cursor: pointer;
+      }
+       #menu ul{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           padding: 10px 0;
+       }
+       #menu ul li{
+           padding: 7px;
+           list-style: none;
+       }
+       #menu ul li a{
+           background-color: #FFF;
+           color: #000;
+           text-decoration: none;
+           text-transform: uppercase;
+           font-size: 14px;
+           font-weight: 700;
+           padding: 0;
+       }
+       #menu ul li a:hover{
+           cursor: pointer;
+       }
+       #menu ul li:last-child{
+        border-top: 1px solid hsl(231, 7%, 65%);
+       }
+       #menu ul li:last-child a{
+        color:hsl(231, 7%, 65%);
+        
+       }
+       #menu ul li:nth-last-child(2){
+           display: none;
+       }
+   
+  main{
+      flex-direction: column-reverse;
+      padding: 0;
+  }
+  .section-image{
+      width: 100%;
+      position: relative;
+  }
+  .section-image img{
+      width: 125%;
+  }
+  .section-image div{
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      right:0;
+      left: auto;
+  }
+ 
+  .section-text{
+      width: 100%;
+      padding: 40px 20px;
+      text-align: left;
+  }
+ 
+  .section-text h1{
+      font-size: 40px;
+      text-align: left;
+  }
+  .section-text p{
+      font-size: 13px;
+      margin-bottom: 20px;
+  }
+  .section-text span:nth-child(2), .section-text span:last-child {
+      letter-spacing: .2rem;
+      font-size: 12px;
+  }
+  .section-text div:first-of-type a{
+   font-size: 12px;
+  }
+  .section-text span:last-child{
+      font-size: 12px;
+      letter-spacing: .1rem;
+  }
+  .section-text div:first-of-type{
+      padding: 10px;
+  }
+
+}
