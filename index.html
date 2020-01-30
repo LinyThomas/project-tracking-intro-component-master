@@ -12,10 +12,10 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body onload="displayMenu()">
   <header>
     <div class="header-top">
       <div class="logo">
@@ -71,7 +71,7 @@
         y.style.display = "none";
         z.style.display = "block";
       } else {
-        x.style.display = "block";
+        x.style.display ="block";
         y.style.display ="block";
         z.style.display = "none";
       }
@@ -86,10 +86,15 @@
         z.style.display = "block";
       } else {
         x.style.display = "block";
-        y.style.display == "block";
+        y.style.display = "block";
         z.style.display = "none";
       }
     }
+    $( window ).resize(function() {
+        if($(window).width()>700) $('#menu').show();
+        else $('#menu').hide();
+      });
+  
     </script>
     
 </body>
